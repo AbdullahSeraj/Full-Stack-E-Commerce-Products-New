@@ -11,7 +11,7 @@ const bodyParser = require("body-parser");
 app.use(
   cors({
     origin: ["http://localhost:3000"],
-    methods: ["POST", "GET", "PUT"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
 );
