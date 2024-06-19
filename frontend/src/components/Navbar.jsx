@@ -68,7 +68,7 @@ const Navbar = () => {
 
                 <div className='relative cursor-pointer' onClick={() => { accessToken ? navigate("/cart") : navigate("/login") }}>
                     <FaShoppingCart size={22} className='text-gray-700' />
-                    {data?.cartLength !== 0 &&
+                    {(data?.cartLength && data?.cartLength !== 0) &&
                         <div className='absolute -top-2 -right-2 w-4 h-4 text-[11px] text-white rounded-full bg-red-500 flex items-center justify-center'>{data?.cartLength}</div>
                     }
                 </div>
