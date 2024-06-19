@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://full-stack-e-commerce-products-frontend.vercel.app"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
