@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-full {
+    @apply rounded-full bg-red-500 hover:bg-red-600 transition duration-200 text-white py-1 px-5 font-semibold
+}
+
+th, td {
+    border: 1px solid gray;
+}
+
+textarea {
+    resize: none;
+}
+
+.admin-profile {
+    min-height: calc(100vh - 110px);
+}
+
+@media (max-width: 768px) {
+    .admin-profile {
+        min-height: fit-content;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-500 rounded-md
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-200
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-block::-webkit-scrollbar {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
